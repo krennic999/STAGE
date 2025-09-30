@@ -106,7 +106,7 @@ Detailed install instructions can be found in [T2I-R1](https://github.com/CaraJ7
 
 ### Prepare reward model checkpoints
 
-Download corresponding models to your local path:
+Download corresponding models to your local path, and update your local path to ```grpo/configs/reward_paths.json```:
 
 | Reward Model | Link | Download Command |
 |--------------|------|------------------|
@@ -115,7 +115,6 @@ Download corresponding models to your local path:
 | GroundingDINO | [groundingdino_swint_ogc.pth](https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth) | ```wget https://github.com/IDEA-Research/GroundingDINO/releases/download/v0.1.0-alpha/groundingdino_swint_ogc.pth``` |
 | ORM | [ORM-T2I-R1](https://huggingface.co/CaraJ/ORM-T2I-R1) | ```huggingface-cli download CaraJ/ORM-T2I-R1 --repo-type model --local-dir ORM-T2I-R1``` |
 | CLIP | [open-clip](https://huggingface.co/laion/CLIP-ViT-H-14-laion2B-s32B-b79K) | ```huggingface-cli download laion/CLIP-ViT-H-14-laion2B-s32B-b79K --repo-type model --local-dir open-clip``` |
-
 
 **About how to prepare GenEval reward:**
 
@@ -160,7 +159,8 @@ cd into ```grpo/src/infer```, and run ```reason_inference_xxx.py``` for inferenc
     torchrun --nnodes=1 --nproc_per_node=8 --node_rank=0 --master_port=29500 reason_inference_xxx.py --model_path your-janus-pro-model --save_root your-save-root
    ```
 
-We provide useful tools for inference on T2I-Compbench:
+**We provide useful tool for calculate T2I-Compbench score:**
+
 First prepare T2I-Compbench based on the official [repo](https://github.com/Karine-Huang/T2I-CompBench): 
 cd into ```into grpo/src/infer```, first replace ```T2I_COMP_CODE_ROOT```in ```./cal_t2i_compbench_value.sh ``` and use:
    ```bash
