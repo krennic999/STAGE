@@ -1,0 +1,14 @@
+{
+    "hps_ckpt_path": "/mnt/.../HPS_v2.1_compressed.pt",
+    "clip_ckpt_path": "/mnt/.../CLIP-ViT-H-14-laion2B-s32B-b79K/open_clip_pytorch_model.bin",
+    "git_ckpt_path": "/mnt/.../git-large-vqav2",
+    "gdino_ckpt_path": "/mnt/.../groundingdino_swint_ogc.pth",
+    "gdino_config_path": "utils/GroundingDINO/groundingdino/config/GroundingDINO_SwinT_OGC.py",
+    "orm_ckpt_path": "/mnt/.../ORM-T2I-R1",
+    "ocr_base_root": "/mnt/.../paddleocr/whl",
+
+    "geneval_config_path": "/your-mmdet-code/mmdetection/configs/mask2former/mask2former_swin-s-p4-w7-224_lsj_8x2_50e_coco.py",
+    "geneval_ckpt_path": "/your-mmdet-ckpt/mmdetection",
+    "geneval_clip_path": "your-clip-ckpt/timm/vit_large_patch14_clip_224.openai/open_clip_pytorch_model.bin",
+    "geneval_obj_names_path": "/your-stage-root/STAGE/src/grpo/src/utils/reward-server/reward_server/object_names.txt"
+  }
