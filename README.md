@@ -30,6 +30,11 @@ Built on the original Janus-Pro-7B, STAGE improves the GenEval score from **0.78
 We have also discussed rewards related to human preference and text rendering.
 <!-- </b> -->
 
+<div align="center">
+<img alt="image" src="assets/comp_teaser.png" style="width:70%;">
+</div>
+</div>
+
 <details><summary><b>CLICK for Detailed Introduction</b></summary>
 Reinforcement learning has recently been explored to improve text-to-image generation, yet applying existing GRPO algorithms to autoregressive (AR) image models remains challenging. The instability of the training process easily disrupts the pretrained model capability during long runs, resulting in marginal gains, degraded image quality, and poor generalization. In this work, we revisit GRPO for AR image generation and identify two key issues: contradictory gradients from unnecessary tokens and unstable policy entropy dynamics. To address these, we introduce STAGE, a stable and generalizable framework that leverages two targeted solutions:
 
@@ -174,7 +179,7 @@ For evaluation on OCR, use:
    ```
 
 ## Acknowledgements
-We thank [T2I-R1](https://github.com/CaraJ7/T2I-R1) and Flow-GRPO(https://github.com/yifan123/flow_grpo) for their great work, upon which our repo is built.
+We thank [T2I-R1](https://github.com/CaraJ7/T2I-R1) and [Flow-GRPO](https://github.com/yifan123/flow_grpo) for their great work, upon which our repo is built.
 
 
 ## Cite
